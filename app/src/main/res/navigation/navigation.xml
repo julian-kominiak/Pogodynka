@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation.xml"
+            app:startDestination="@id/classicFragment">
+
+    <fragment
+            android:id="@+id/classicFragment"
+            android:name="pl.juliankominiak.pogodynka.ClassicFragment"
+            android:label="classicFragment">
+        <action
+                android:id="@+id/action_classicFragment_to_seniorFragment"
+                app:destination="@+id/seniorFragment" />
+    </fragment>
+
+    <fragment
+            android:id="@+id/seniorFragment"
+            android:name="pl.juliankominiak.pogodynka.SeniorFragment"
+            android:label="seniorFragment">
+        <action
+                android:id="@+id/action_seniorFragment_to_classicFragment"
+                app:destination="@+id/classicFragment" />
+    </fragment>
+
+</navigation>
