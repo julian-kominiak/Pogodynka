@@ -60,7 +60,7 @@ class ClassicFragment : Fragment() {
     fun callApi(view: View, city: String) {
         val request = Request.Builder()
             .url("https://api.openweathermap.org/data/2.5/weather?q=" +
-                    "${city},pl&appid=1bed0d489153f077e814f9e801d4eb3c&units=metric")
+                    "${city}&appid=1bed0d489153f077e814f9e801d4eb3c&units=metric")
             .build()
 
         val client = OkHttpClient()
